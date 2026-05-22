@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherX</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="weatherScene"></div>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-temperature-half"></i>
+            <p>WeatherX</p>
+        </div>
+
+        <div class="g2">
+            <div class="aboutMe">
+            <i class="far fa-user" title="Developer"></i> <span>Dev</span>
+            </div>
+            <div class="network">
+                <i class="fa-solid fa-wifi" title="Ping"></i>
+                <span id="networkID">0 ms</span>
+            </div>
+            <div class="hideMe">
+                <button class="cross">x</button>
+                <p>I'm Prattikk.</p>
+                <p>For more details:</p>
+                <p><a href="http://prattikk69.github.io/Portfolio/" target="_blank">
+                    <i class="far fa-user"></i>Visit Portfolio.</a></p>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="status">
+        <div class="loader"></div>
+        <span>Updating...</span>
+    </div> -->
+    <div class="container">
+        <div class="greeting"></div>
+        <p id="greeting"></p>
+        <input type="text" id="searchBar" placeholder="Search city here..." name="searchBar" list="search">
+        <datalist id="search">
+            <option>Kathmandu, Nepal</option>
+            <option>Solukhumbu, Nepal</option>
+            <option>Sydney, Austrilia</option>
+            <option>Shanghai, China</option>
+            <option>Tokyo, Japan</option>
+            <option>Washington DC, America</option>
+            <option>Delhi, India</option>
+            <option>Mumbai, India</option>
+            <option>Bangkok, Thailand</option>
+        </datalist>
+        <div class="currentCity">
+            <h3>Current City: <span id="currentCityID">Getting location...</span></h3>
+        </div>
+            <div class="result">
+                <div class="temperature">
+                    <span id="tempID">--°C</span>
+                </div>
+                <div class="putResult">
+                    <span id="putResultID"> fetching...</span>
+                </div>
+                <div class="extraInfo">
+                    <span class="minTemp">Min</span>
+                    <span>~</span>
+                    <span class="maxTemp">Max</span>
+                    <span style="margin-left: 3px;">Feels like</span>
+                    <span class="feels"></span>
+                    <div class="hourly-strip" id="hourlyStrip">
+                        
+                    </div>
+                </div>
+                <div class="myLocation" title="Get my location">
+                    <i class="fas fa-location-arrow" id="pin"></i>
+                </div>
+                <div class="focusBar">
+                    <i class="fas fa-pen"></i>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
